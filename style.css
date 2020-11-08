@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Audiowide", cursive;
+}
+.container {
+  background: linear-gradient(
+      rgba(59, 59, 59, 0.8),
+      rgba(54, 54, 54, 0.5),
+      rgba(53, 53, 53, 0.4)
+    ),
+    url("./pexels-lukas-669577.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+ 
+
+
+}
+/* header starts */
+
+.header-container {
+  height: 100px;
+  background-color: rgba(238, 230, 230, 0.2);
+}
+
+.header-innercontainer {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header-innercontainer h1 span {
+  color: rgb(165, 50, 42);
+  font-size: 40px;
+}
+.header-innercontainer h1 {
+  color: white;
+  font-size: 50px;
+}
+.header-innercontainer nav a {
+  text-decoration: none;
+  padding-right: 35px;
+  font-size: 18px;
+  color: rgb(165, 50, 42);
+  transition: 1s ease-out;
+}
+.header-innercontainer nav a:hover {
+  color: rgb(97, 12, 6);
+}
+/* header ends */
+
+/* section starts */
+
+.left-section {
+  width: 40%;
+  height: 400px;
+}
+.left-section h2 {
+  color: wheat;
+  font-size: 22px;
+}
+.left-section h3 {
+  color: rgb(180, 197, 84);
+  font-size: 15px;
+}
+.section-container {
+  height: 557px;
+  display: flex;
+  justify-content: space-evenly;
+  /* align-items: center; */
+
+}
+.right-section {
+  background-color: rgba(150, 149, 149, 0.5);
+  height: 475px;
+  width: 30%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.right-section h3 {
+  text-align: center;
+  color: rgb(61, 60, 60);
+  font-size: 30px;
+  text-align: center;
+}
+form {
+  text-align: center;
+}
+form label{
+    color:white;
+    font-size: 20px;
+}
+form input {
+  background-color: rgba(150, 149, 149, 0.5);
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(61, 60, 60);
+  width: 90%;
+  height: 25px;
+  border-radius: 8px;
+}
+button{
+    padding: 15px 30px;
+    border-radius: 20px;
+    border: none;
+    background-color:rgb(61, 60, 60);
+    color: white;
+    font-size: 20px;
+    font-family: bold;
+    cursor: pointer;
+}
+
+@media (max-width:600px) {
+.section-container{
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items:center;
+}
+.left-section {
+  width: 100%;
+  height: 300px;
+  
+
+}
+.left-section h2,h3{
+  font-size: 22px;
+}
+.right-section{
+  width: 70%;
+  height: 425px;
+}
+.header-container {
+  height:50px;
+  background-color: rgba(238, 230, 230, 0.2);
+}
+
+.header-innercontainer {
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header-innercontainer h1 span {
+  color: rgb(165, 50, 42);
+  font-size: 20px;
+}
+.header-innercontainer h1 {
+  color: white;
+  font-size: 25px;
+}
+.header-innercontainer nav a {
+  text-decoration: none;
+  padding-right: 35px;
+  font-size: 12px;
+  color: rgb(165, 50, 42);
+  transition: 1s ease-out;
+}
+}
